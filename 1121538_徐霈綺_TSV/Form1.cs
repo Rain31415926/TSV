@@ -160,7 +160,7 @@ namespace _1121538_徐霈綺_TSV
             {
                 isPlay = false;
                 timPlayer.Stop();
-                btnAutoPlay.Text = "Play";
+                btnAutoPlay.Text = "自動輪讀";
             }
             PlaySelectedWord();
         }
@@ -195,13 +195,13 @@ namespace _1121538_徐霈綺_TSV
             if (isPlay)
             {
                 timPlayer.Start();
-                btnAutoPlay.Text = "Stop";
+                btnAutoPlay.Text = "停止輪讀";
                 PlaySelectedWord();
             }
             else
             {
                 timPlayer.Stop();
-                btnAutoPlay.Text = "Play";
+                btnAutoPlay.Text = "自動輪讀";
             }
         }
 

@@ -60,7 +60,7 @@
             this.tsmiHelp});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 27);
             this.menuStrip1.TabIndex = 6;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -98,7 +98,7 @@
             // tsmiAbout
             // 
             this.tsmiAbout.Name = "tsmiAbout";
-            this.tsmiAbout.Size = new System.Drawing.Size(135, 26);
+            this.tsmiAbout.Size = new System.Drawing.Size(134, 26);
             this.tsmiAbout.Text = "About";
             this.tsmiAbout.Click += new System.EventHandler(this.tsmiAbout_Click);
             // 
@@ -108,9 +108,9 @@
             this.lstWordList.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstWordList.FormattingEnabled = true;
             this.lstWordList.ItemHeight = 25;
-            this.lstWordList.Location = new System.Drawing.Point(0, 30);
+            this.lstWordList.Location = new System.Drawing.Point(0, 27);
             this.lstWordList.Name = "lstWordList";
-            this.lstWordList.Size = new System.Drawing.Size(200, 370);
+            this.lstWordList.Size = new System.Drawing.Size(200, 371);
             this.lstWordList.TabIndex = 0;
             this.lstWordList.Click += new System.EventHandler(this.lstWordList_Click);
             this.lstWordList.DoubleClick += new System.EventHandler(this.lstWordList_DoubleClick);
@@ -125,19 +125,19 @@
             this.palMain.Controls.Add(this.txtWord);
             this.palMain.Controls.Add(this.lblHelp);
             this.palMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.palMain.Location = new System.Drawing.Point(200, 30);
+            this.palMain.Location = new System.Drawing.Point(200, 27);
             this.palMain.Name = "palMain";
-            this.palMain.Size = new System.Drawing.Size(600, 370);
+            this.palMain.Size = new System.Drawing.Size(600, 371);
             this.palMain.TabIndex = 1;
             // 
             // btnAutoPlay
             // 
             this.btnAutoPlay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAutoPlay.Location = new System.Drawing.Point(502, 122);
+            this.btnAutoPlay.Location = new System.Drawing.Point(502, 161);
             this.btnAutoPlay.Name = "btnAutoPlay";
             this.btnAutoPlay.Size = new System.Drawing.Size(86, 33);
             this.btnAutoPlay.TabIndex = 4;
-            this.btnAutoPlay.Text = "Play";
+            this.btnAutoPlay.Text = "自動輪讀";
             this.btnAutoPlay.UseVisualStyleBackColor = true;
             this.btnAutoPlay.Click += new System.EventHandler(this.btnAutoPlay_Click);
             // 
@@ -164,7 +164,7 @@
             this.txtExplain.Multiline = true;
             this.txtExplain.Name = "txtExplain";
             this.txtExplain.ReadOnly = true;
-            this.txtExplain.Size = new System.Drawing.Size(460, 216);
+            this.txtExplain.Size = new System.Drawing.Size(460, 217);
             this.txtExplain.TabIndex = 2;
             // 
             // txtPhonogram
@@ -201,7 +201,7 @@
             // 
             this.lblHelp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblHelp.AutoSize = true;
-            this.lblHelp.Location = new System.Drawing.Point(499, 323);
+            this.lblHelp.Location = new System.Drawing.Point(499, 324);
             this.lblHelp.Name = "lblHelp";
             this.lblHelp.Size = new System.Drawing.Size(87, 30);
             this.lblHelp.TabIndex = 5;
@@ -212,16 +212,16 @@
             this.sssWord.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.sssWord.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsslMessage});
-            this.sssWord.Location = new System.Drawing.Point(0, 400);
+            this.sssWord.Location = new System.Drawing.Point(0, 398);
             this.sssWord.Name = "sssWord";
-            this.sssWord.Size = new System.Drawing.Size(800, 22);
+            this.sssWord.Size = new System.Drawing.Size(800, 24);
             this.sssWord.TabIndex = 2;
             this.sssWord.Text = "statusStrip1";
             // 
             // tsslMessage
             // 
             this.tsslMessage.Name = "tsslMessage";
-            this.tsslMessage.Size = new System.Drawing.Size(0, 16);
+            this.tsslMessage.Size = new System.Drawing.Size(0, 19);
             // 
             // timPlayer
             // 
