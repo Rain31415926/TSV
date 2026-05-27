@@ -16,7 +16,7 @@ namespace _1121538_徐霈綺_TSV
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new frmWordCards());
         }
     }
 }
