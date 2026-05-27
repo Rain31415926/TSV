@@ -59,7 +59,7 @@ namespace _1121538_徐霈綺_TSV
         {
             try
             {
-                string[] lines = File.ReadAllLines(strWordFile);
+                string[] lines = File.ReadAllLines(strWordFile, System.Text.Encoding.Default);
                 _WordList.LoadFromStringArray(lines);
 
                 lstWordList.Items.Clear();
