@@ -101,11 +101,22 @@ namespace _1121538_徐霈綺_TSV
         private void PlayWord(WordItem word)
         {
             if (word == null) return;
-            if (File.Exists(word.SoundPath))
+
+            // 取得目前的文字檔所在目錄
+            string directory = Path.GetDirectoryName(strWordFile);
+            if (string.IsNullOrEmpty(directory))
+            {
+                directory = AppDomain.CurrentDomain.BaseDirectory;
+            }
+
+            // 與物件內的 SoundPath 組合出絕對路徑
+            string fullSoundPath = Path.Combine(directory, word.SoundPath);
+
+            if (File.Exists(fullSoundPath))
             {
                 if (wmp != null)
                 {
-                    wmp.URL = word.SoundPath;
+                    wmp.URL = fullSoundPath;
                     wmp.controls.play();
                 }
             }
