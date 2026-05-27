@@ -101,5 +101,10 @@ namespace _1121538_徐霈綺_TSV
         {
             this.Close();
         }
+
+        private void logoPictureBox_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

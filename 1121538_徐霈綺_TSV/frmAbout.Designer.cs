@@ -57,6 +57,7 @@ namespace _1121538_徐霈綺_TSV
             // logoPictureBox
             // 
             this.logoPictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.logoPictureBox.Image = global::_1121538_徐霈綺_TSV.Properties.Resources.Explosion;
             this.logoPictureBox.Location = new System.Drawing.Point(3, 3);
             this.logoPictureBox.Name = "logoPictureBox";
             this.tableLayoutPanel.SetRowSpan(this.logoPictureBox, 6);
@@ -64,6 +65,7 @@ namespace _1121538_徐霈綺_TSV
             this.logoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.logoPictureBox.TabIndex = 12;
             this.logoPictureBox.TabStop = false;
+            this.logoPictureBox.Click += new System.EventHandler(this.logoPictureBox_Click);
             // 
             // labelProductName
             // 
