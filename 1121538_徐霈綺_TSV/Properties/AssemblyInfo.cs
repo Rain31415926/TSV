@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("1121538_徐霈綺_TSV")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Razer")]
+[assembly: AssemblyCompany("Rain314")]
 [assembly: AssemblyProduct("1121538_徐霈綺_TSV")]
-[assembly: AssemblyCopyright("Copyright © Razer 2026")]
+[assembly: AssemblyCopyright("Copyright © Rain314 2026")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

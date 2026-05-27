@@ -34,6 +34,7 @@
             this.tsmiOpen = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiExit = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiHelp = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiAbout = new System.Windows.Forms.ToolStripMenuItem();
             this.lstWordList = new System.Windows.Forms.ListBox();
             this.palMain = new System.Windows.Forms.Panel();
             this.btnAutoPlay = new System.Windows.Forms.Button();
@@ -59,7 +60,7 @@
             this.tsmiHelp});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 27);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 30);
             this.menuStrip1.TabIndex = 6;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -88,9 +89,18 @@
             // 
             // tsmiHelp
             // 
+            this.tsmiHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiAbout});
             this.tsmiHelp.Name = "tsmiHelp";
             this.tsmiHelp.Size = new System.Drawing.Size(74, 23);
             this.tsmiHelp.Text = "幫助(H)";
+            // 
+            // tsmiAbout
+            // 
+            this.tsmiAbout.Name = "tsmiAbout";
+            this.tsmiAbout.Size = new System.Drawing.Size(135, 26);
+            this.tsmiAbout.Text = "About";
+            this.tsmiAbout.Click += new System.EventHandler(this.tsmiAbout_Click);
             // 
             // lstWordList
             // 
@@ -98,9 +108,9 @@
             this.lstWordList.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstWordList.FormattingEnabled = true;
             this.lstWordList.ItemHeight = 25;
-            this.lstWordList.Location = new System.Drawing.Point(0, 27);
+            this.lstWordList.Location = new System.Drawing.Point(0, 30);
             this.lstWordList.Name = "lstWordList";
-            this.lstWordList.Size = new System.Drawing.Size(200, 373);
+            this.lstWordList.Size = new System.Drawing.Size(200, 370);
             this.lstWordList.TabIndex = 0;
             this.lstWordList.Click += new System.EventHandler(this.lstWordList_Click);
             this.lstWordList.DoubleClick += new System.EventHandler(this.lstWordList_DoubleClick);
@@ -115,9 +125,9 @@
             this.palMain.Controls.Add(this.txtWord);
             this.palMain.Controls.Add(this.lblHelp);
             this.palMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.palMain.Location = new System.Drawing.Point(200, 27);
+            this.palMain.Location = new System.Drawing.Point(200, 30);
             this.palMain.Name = "palMain";
-            this.palMain.Size = new System.Drawing.Size(600, 373);
+            this.palMain.Size = new System.Drawing.Size(600, 370);
             this.palMain.TabIndex = 1;
             // 
             // btnAutoPlay
@@ -154,7 +164,7 @@
             this.txtExplain.Multiline = true;
             this.txtExplain.Name = "txtExplain";
             this.txtExplain.ReadOnly = true;
-            this.txtExplain.Size = new System.Drawing.Size(460, 219);
+            this.txtExplain.Size = new System.Drawing.Size(460, 216);
             this.txtExplain.TabIndex = 2;
             // 
             // txtPhonogram
@@ -191,7 +201,7 @@
             // 
             this.lblHelp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblHelp.AutoSize = true;
-            this.lblHelp.Location = new System.Drawing.Point(499, 326);
+            this.lblHelp.Location = new System.Drawing.Point(499, 323);
             this.lblHelp.Name = "lblHelp";
             this.lblHelp.Size = new System.Drawing.Size(87, 30);
             this.lblHelp.TabIndex = 5;
@@ -263,6 +273,7 @@
         private System.Windows.Forms.ToolStripMenuItem tsmiOpen;
         private System.Windows.Forms.ToolStripMenuItem tsmiExit;
         private System.Windows.Forms.ToolStripMenuItem tsmiHelp;
+        private System.Windows.Forms.ToolStripMenuItem tsmiAbout;
     }
 }
 

@@ -55,6 +55,14 @@ namespace _1121538_徐霈綺_TSV
             Application.Exit();
         }
 
+        private void tsmiAbout_Click(object sender, EventArgs e)
+        {
+            using (var frm = new frmAbout())
+            {
+                frm.ShowDialog();
+            }
+        }
+
         private void LoadFile()
         {
             try
