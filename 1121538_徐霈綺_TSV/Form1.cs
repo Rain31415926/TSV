@@ -39,6 +39,7 @@ namespace _1121538_徐霈綺_TSV
 
         private void tsmiOpen_Click(object sender, EventArgs e)
         {
+            this.KeyPreview = false; // 暫時關閉 KeyPreview 避免 Enter 鍵穿透
             using (OpenFileDialog ofd = new OpenFileDialog())
             {
                 ofd.Filter = "Text Files|*.txt|TSV Files|*.tsv|All Files|*.*";
@@ -48,6 +49,8 @@ namespace _1121538_徐霈綺_TSV
                     LoadFile();
                 }
             }
+            // 延遲恢復 KeyPreview，確保 Enter 鍵事件被消耗掉
+            this.BeginInvoke(new Action(() => { this.KeyPreview = true; }));
         }
 
         private void tsmiExit_Click(object sender, EventArgs e)
